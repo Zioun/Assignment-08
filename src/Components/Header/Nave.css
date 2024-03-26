@@ -1,0 +1,15 @@
+li a.active{
+    background: transparent !important;
+    color: #23BE0A !important;
+    border: 1px solid #23BE0A;
+    font-weight: bold;
+}
+li{
+    font-weight: bold;
+}
+li.active{
+    background-color: unset !important;
+}
+li a:hover{
+    background-color: transparent;
+}
