@@ -57,7 +57,7 @@ const Listed = () => {
           className="select select-bordered w-full max-w-xs bg-[#23BE0A] text-white ws font-bold"
           onChange={(event) => handleFilter(event.target.value, appliedReadData, setDisplayReadBooks)}
         >
-          <option className="bg-white text-black" value="All">Sort By</option>
+          <option disabled  className="bg-white text-black" value="All">Sort By</option>
           <option className="bg-white text-black" value="rating">Rating</option>
           <option className="bg-white text-black" value="totalPages">Total Pages</option>
           <option className="bg-white text-black" value="yearOfPublishing">Publish Year</option>
@@ -68,7 +68,7 @@ const Listed = () => {
           className="select select-bordered w-full max-w-xs bg-[#23BE0A] text-white ws font-bold"
           onChange={(event) => handleFilter(event.target.value, appliedWishData, setDisplayWishBooks)}
         >
-          <option className="bg-white text-black" value="All">Sort By</option>
+          <option disabled className="bg-white text-black" value="All">Sort By</option>
           <option className="bg-white text-black" value="rating">Rating</option>
           <option className="bg-white text-black" value="totalPages">Total Pages</option>
           <option className="bg-white text-black" value="yearOfPublishing">Publish Year</option>

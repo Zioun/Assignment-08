@@ -13,9 +13,9 @@ const Read = () => {
 
   const data = appliedReadData.map((read, index) => ({
     name: read.bookName,
-    uv: read.totalPages, // Assuming you have 'uv' property in your read data
-    pv: read.pv, // Assuming you have 'pv' property in your read data
-    amt: read.amt, // Assuming you have 'amt' property in your read data
+    uv: read.totalPages,
+    pv: read.totalPages,
+    amt: read.totalPages,
   }));
 
   const getPath = (x, y, width, height) => {
@@ -32,7 +32,7 @@ const Read = () => {
   };
 
   return (
-    <div className='flex justify-center h-screen items-center'>
+    <div className='flex justify-center'>
       <BarChart
         width={1100}
         height={600}

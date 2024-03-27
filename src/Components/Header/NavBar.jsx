@@ -31,9 +31,9 @@ const NavBar = () => {
         <li><NavLink to="/read">Pages to Read</NavLink></li>
         <li>
           <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+          <ul className="p-2 w-[170px]">
+            <li><NavLink to="author">Author</NavLink></li>
+            <li><NavLink to="top-rated-book">Top Rated Books</NavLink></li>
           </ul>
         </li>
       </ul>

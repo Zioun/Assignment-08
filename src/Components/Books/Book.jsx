@@ -2,8 +2,8 @@ import React from "react";
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 
-const Book = ({job}) => {
-    const {bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = job;
+const Book = ({book}) => {
+    const {bookId, bookName, author, image, review, totalPages, rating, category, tags, publisher, yearOfPublishing} = book;
   return (
     <Link to={`/details/${bookId}`}>
         <div className="card card-compact bg-base-100 shadow-xl p-[24px] border cursor-pointer h-full">
