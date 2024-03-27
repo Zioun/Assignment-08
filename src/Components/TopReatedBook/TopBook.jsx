@@ -24,7 +24,7 @@ const TopBook = ({ book }) => {
           </div>
           <div className="p-0">
             <div className="border-b-[2px] border-dashed">
-              <div className="flex gap-[12px] mt-[24px]">
+              <div className="flex flex-wrap gap-[12px] mt-[24px]">
                 {tags.map((tag, index) => (
                   <h2
                     key={index}

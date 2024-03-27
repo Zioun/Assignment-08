@@ -52,25 +52,25 @@ const Listed = () => {
           </div>
         </div>
       </div>
-      <div className={`text-center mt-[32px] max-w-[145px] m-auto ${open === "true" ? 'hidden' : 'block'}`}>
+      <div className={`text-center mt-[32px] max-w-[180px] m-auto ${open === "true" ? 'hidden' : 'block'}`}>
         <select
           className="select select-bordered w-full max-w-xs bg-[#23BE0A] text-white ws font-bold"
           onChange={(event) => handleFilter(event.target.value, appliedReadData, setDisplayReadBooks)}
         >
           <option disabled  className="bg-white text-black" value="All">Sort By</option>
           <option className="bg-white text-black" value="rating">Rating</option>
-          <option className="bg-white text-black" value="totalPages">Total Pages</option>
+          <option className="bg-white text-black" value="totalPages">Number of pages</option>
           <option className="bg-white text-black" value="yearOfPublishing">Publish Year</option>
         </select>
       </div>
-      <div className={`text-center mt-[32px] max-w-[145px] m-auto ${open === "true" ? 'block' : 'hidden'}`}>
+      <div className={`text-center mt-[32px] max-w-[180px] m-auto ${open === "true" ? 'block' : 'hidden'}`}>
         <select
           className="select select-bordered w-full max-w-xs bg-[#23BE0A] text-white ws font-bold"
           onChange={(event) => handleFilter(event.target.value, appliedWishData, setDisplayWishBooks)}
         >
           <option disabled className="bg-white text-black" value="All">Sort By</option>
           <option className="bg-white text-black" value="rating">Rating</option>
-          <option className="bg-white text-black" value="totalPages">Total Pages</option>
+          <option className="bg-white text-black" value="totalPages">Number of pages</option>
           <option className="bg-white text-black" value="yearOfPublishing">Publish Year</option>
         </select>
       </div>

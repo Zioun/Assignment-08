@@ -30,7 +30,7 @@ const Wish = ({ wish }) => {
           </h2>
         </div>
         <div className="flex flex-col md:flex-row gap-5">
-          <div className="flex gap-5">
+          <div className="flex flex-wrap gap-5">
             {tags.map((tags) => (
               <h2 className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
                 <span># {tags}</span>

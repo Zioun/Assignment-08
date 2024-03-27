@@ -33,7 +33,7 @@ const Read = ({ add }) => {
                     </h2>
                 </div>
                 <div className="flex flex-col md:flex-row gap-5">
-                    <div className="flex gap-5">
+                    <div className="flex flex-wrap gap-5">
                         {tags && Array.isArray(tags) && tags.length > 0 && tags.map((tag, index) => (
                             <h2 key={index} className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
                                 <span># {tag}</span>

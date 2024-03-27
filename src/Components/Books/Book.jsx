@@ -17,7 +17,7 @@ const Book = ({book}) => {
             </div>
             <div className="p-0">
             <div className="border-b-[2px] border-dashed">
-                <div className="flex gap-[12px] mt-[24px]">
+                <div className="flex flex-wrap gap-[12px] mt-[24px]">
                     {
                         tags.map((tag,index) => <h2 className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
                         {tag}

@@ -19,11 +19,10 @@ const Details = () => {
     saveDataWishToLocalStorage(book)
   }
 
-
   return (
     <div className="grid md:grid-cols-12 gap-[48px] mb-10">
       <div className="col-span-6 bg-[#F3F3F3] md:rounded-[16px] md:p-[73px]">
-        <img className="max-w-[425px] md:h-[564px] m-auto py-[50px] md:py-[0px]" src={image} alt="" />
+        <img className="max-w-[100%] md:h-[564px] m-auto py-[50px] md:py-[0px]" src={image} alt="" />
       </div>
       <div className="col-span-6 px-5 md:px-0">
         <div>
@@ -47,7 +46,7 @@ const Details = () => {
         </div>
         <div className="flex items-center gap-5 font-bold mb-[24px]">
           <p className="">Tag</p>
-          <div className="flex gap-[12px]">
+          <div className="flex flex-wrap gap-[12px]">
             {tags.map((tag, index) => (
               <h2 className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
                 <span># </span>
