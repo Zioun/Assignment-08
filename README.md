@@ -1,6 +1,6 @@
 # Book Vibe
 
-Live Site URL: [www.bookvibe.com](https://deluxe-tulumba-06a1d7.netlify.app/)
+Live Site URL: [https://deluxe-tulumba-06a1d7.netlify.app/](https://deluxe-tulumba-06a1d7.netlify.app/)
 
 ## Features and Characteristics:
 
