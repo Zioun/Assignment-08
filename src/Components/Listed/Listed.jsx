@@ -8,12 +8,34 @@ const Listed = () => {
     
     const [appliedReadData, setappliedReadData] = useState([]);
     const [appliedWishData, setappliedWishData] = useState([]);
+
+    const [displayReadBooks, setDisplayReadBooks] = useState([]);
+    const handleBooksFilter = filter => {
+      if(filter === "All"){
+        setDisplayReadBooks(appliedReadData);
+      } else if(filter === "rating"){
+        const sortedBooks = appliedReadData.slice().sort((a, b) => b.rating - a.rating);
+        setDisplayReadBooks(sortedBooks);
+      }else if(filter === "totalPages"){
+        const sortedBooks = appliedReadData.slice().sort((a, b) => b.totalPages - a.totalPages);
+        setDisplayReadBooks(sortedBooks);
+      }else if(filter === "yearOfPublishing"){
+        const sortedBooks = appliedReadData.slice().sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+        setDisplayReadBooks(sortedBooks);
+      }
+    }
+
+
     console.log(appliedReadData)
     useEffect(() => {
         const getDefaultReadData = JSON.parse(localStorage.getItem("read")) || [];
         setappliedReadData(getDefaultReadData);
+        setDisplayReadBooks(getDefaultReadData);
+
+
         const getDefaultWishData = JSON.parse(localStorage.getItem("wish")) || [];
         setappliedWishData(getDefaultWishData);
+
     }, []);
 
   return (
@@ -28,16 +50,19 @@ const Listed = () => {
       <div className="text-center mt-[32px] max-w-[145px] m-auto">
         <select
           className="select select-bordered w-full max-w-xs bg-[#23BE0A] text-white ws font-bold"
-          onChange={(event) => handleJobFilter(event.target.value)}
+          onChange={(event) => handleBooksFilter(event.target.value)}
         >
-          <option className="bg-white text-black" value="all">
-            All
+          <option className="bg-white text-black" value="All" disabled selected>
+            Sort By
           </option>
-          <option className="bg-white text-black" value="remote">
-            Remote
+          <option className="bg-white text-black" value="rating">
+            Rating
           </option>
-          <option className="bg-white text-black" value="onside">
-            Onside
+          <option className="bg-white text-black" value="totalPages">
+            Total Pages
+          </option>
+          <option className="bg-white text-black" value="yearOfPublishing">
+            Publish Year
           </option>
         </select>
       </div>
@@ -52,7 +77,7 @@ const Listed = () => {
         />
         <div role="tabpanel" className="tab-content  border-base-300 rounded-box p-6 space-y-5">
           {
-            appliedReadData.map(add => <Read key={add.bookId} add={add}></Read>)
+            displayReadBooks.map(add => <Read key={add.bookId} add={add}></Read>)
           }
         </div>
 

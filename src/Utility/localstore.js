@@ -1,33 +1,38 @@
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 const saveDataReadToLocalStorage = (book) => {
-    const saveData = JSON.parse(localStorage.getItem("read")) || [];
+    const saveReadData = JSON.parse(localStorage.getItem("read")) || [];
 
-    const isDataFound = saveData.find((item) => item.bookId == book.bookId);
-    console.log(saveData)
-    if(isDataFound){
+    const isReadDataFound = saveReadData.find((item) => item.bookId === book.bookId);
+
+    if (isReadDataFound) {
         toast.error("Book Already Applied!");
-        
-    }else{
+    } else {
         toast.success("Book Successfully Added!");
-        saveData.push(book);
-        localStorage.setItem("read", JSON.stringify(saveData));
+        saveReadData.push(book);
+        localStorage.setItem("read", JSON.stringify(saveReadData));
     }
+
+    return isReadDataFound;
 }
+
 const saveDataWishToLocalStorage = (book) => {
-    const saveData = JSON.parse(localStorage.getItem("wish")) || [];
+    const saveWishData = JSON.parse(localStorage.getItem("wish")) || [];
+    const saveReadData = JSON.parse(localStorage.getItem("read")) || [];
 
-    const isDataFound = saveData.find((item) => item.bookId == book.bookId);
-    console.log(saveData)
-    if(isDataFound){
+    const isWishDataFound = saveWishData.find((item) => item.bookId === book.bookId);
+    const isReadDataFound = saveReadData.find((item) => item.bookId === book.bookId);
+
+    if (isWishDataFound) {
         toast.error("Book Already Applied!");
-        
-    }else{
+    } else if (isReadDataFound) {
+        toast.error("You Already Added Read List Can't Added Wish List");
+    } else {
         toast.success("Book Successfully Added!");
-        saveData.push(book);
-        localStorage.setItem("wish", JSON.stringify(saveData));
+        saveWishData.push(book);
+        localStorage.setItem("wish", JSON.stringify(saveWishData));
     }
 }
 
-export{saveDataReadToLocalStorage, saveDataWishToLocalStorage}
-
+export { saveDataReadToLocalStorage, saveDataWishToLocalStorage };

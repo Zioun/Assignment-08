@@ -1,17 +1,33 @@
-// const getWishBook = () => {
-//     const storedBookWishApplication = localStorage.getItem('read');
-//     if(storedBookWishApplication){
-//         return JSON.parse(storedBookWishApplication);
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// const saveDataReadToLocalStorage = (book) => {
+//     const saveData = JSON.parse(localStorage.getItem("read")) || [];
+
+//     const isDataFound = saveData.find((item) => item.bookId == book.bookId);
+//     console.log(saveData)
+//     if(isDataFound){
+//         toast.error("Book Already Applied!");
+        
+//     }else{
+//         toast.success("Book Successfully Added!");
+//         saveData.push(book);
+//         localStorage.setItem("read", JSON.stringify(saveData));
 //     }
-//     return [];
+// }
+// const saveDataWishToLocalStorage = (book) => {
+//     const saveData = JSON.parse(localStorage.getItem("wish")) || [];
+
+//     const isDataFound = saveData.find((item) => item.bookId == book.bookId);
+//     console.log(saveData)
+//     if(isDataFound){
+//         toast.error("Book Already Applied!");
+        
+//     }else{
+//         toast.success("Book Successfully Added!");
+//         saveData.push(book);
+//         localStorage.setItem("wish", JSON.stringify(saveData));
+//     }
 // }
 
-// const saveWishBook = (id) => {
-//     const storedBookWishApplications = getWishBook();
-//     const exists = storedBookWishApplications.find(bookId => bookId === id);
-//     if(!exists){
-//         storedBookWishApplications.push(id);
-//         localStorage.setItem('wish', JSON.stringify(storedBookWishApplications));
-//     }
-// }
-// export {getWishBook, saveWishBook}
+// export{saveDataReadToLocalStorage, saveDataWishToLocalStorage}
+
