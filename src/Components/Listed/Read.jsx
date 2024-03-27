@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Details from "../Details/Details";
+import { FaUserFriends } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
 
 const Read = ({ add }) => {
     const {
@@ -37,13 +40,20 @@ const Read = ({ add }) => {
                             </h2>
                         ))}
                     </div>
-                    <div>
-                        <h1 className="mt-2">Year of Publishing: {yearOfPublishing}</h1>
+                    <div className="flex items-center gap-2 text-[#717171]">
+                        <span className="text-[20px]"><IoLocationSharp /></span>
+                        <h1 className="">Year of Publishing: {yearOfPublishing}</h1>
                     </div>
                 </div>
                 <div className="ws font-normal text-[16px] flex flex-col md:flex-row gap-5 text-[#717171] py-[16px]">
-                    <h2>Publisher: {publisher}</h2>
-                    <h2>Page {totalPages}</h2>
+                    <div className="flex items-center gap-3">
+                        <span className="text-[20px]"><FaUserFriends /></span><h2> Publisher: {publisher}</h2>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <span className="text-[20px]"><FaFileAlt /></span>
+                        <h2>Page {totalPages}</h2>
+                    </div>
+                    
                 </div>
                 <hr className="max-w-[1000px]" />
                 <div className="flex flex-col md:flex-row  gap-5 mt-5">

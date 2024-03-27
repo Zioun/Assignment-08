@@ -10,7 +10,9 @@
     "category": "Classic Fiction",
     "tags": ["Drama", "Romance"],
     "publisher": "Scribner",
-    "yearOfPublishing": 1925
+    "yearOfPublishing": 1925,
+    "authorImage": "https://i.ibb.co/gjt5fdS/cccccc-removebg-preview.png",
+    "about": "F. Scott Fitzgerald is a software engineer based in New York. He enjoys coding, reading, and exploring new technologies."
   },
   {
     "bookId": 2,
@@ -23,7 +25,9 @@
     "category": "Classic Fiction",
     "tags": ["Drama", "Legal"],
     "publisher": "J. B. Lippincott & Co.",
-    "yearOfPublishing": 1960
+    "yearOfPublishing": 1960,
+    "authorImage": "https://i.ibb.co/85212GZ/cccc-removebg-preview.png",
+    "about": "Harper Lee is a marketing specialist living in Los Angeles. She loves traveling, photography, and spending time with her family."
   },
   {
     "bookId": 3,
@@ -36,7 +40,9 @@
     "category": "Science Fiction",
     "tags": ["Dystopian", "Political"],
     "publisher": "Secker & Warburg",
-    "yearOfPublishing": 1949
+    "yearOfPublishing": 1949,
+    "authorImage": "https://i.ibb.co/WK70xJ2/neil-degrasse-tyson-removebg-preview.png",
+    "about": "George Orwell is a teacher passionate about education. He enjoys hiking, playing guitar, and volunteering in his community."
   },
   {
     "bookId": 4,
@@ -49,7 +55,9 @@
     "category": "Fiction",
     "tags": ["Coming-of-age", "Teenage Angst"],
     "publisher": "Little, Brown and Company",
-    "yearOfPublishing": 1951
+    "yearOfPublishing": 1951,
+    "authorImage": "https://i.ibb.co/T4MKgXm/c-removebg-preview.png",
+    "about": "J.D. Salinger is a graphic designer based in San Francisco. She loves art, design, and exploring the city's vibrant culture."
   },
   {
     "bookId": 5,
@@ -62,7 +70,9 @@
     "category": "Fantasy",
     "tags": ["Magic", "Adventure"],
     "publisher": "Bloomsbury",
-    "yearOfPublishing": 1997
+    "yearOfPublishing": 1997,
+    "authorImage": "https://i.ibb.co/bvNFW8h/cc-removebg-preview.png",
+    "about": "J.K. Rowling is a financial analyst living in Chicago. He enjoys playing basketball, reading books, and attending live music concerts."
   },
   {
     "bookId": 6,
@@ -75,7 +85,9 @@
     "category": "Classic Fiction",
     "tags": ["Coming of Age", "Psychological"],
     "publisher": "Little, Brown and Company",
-    "yearOfPublishing": 1951
+    "yearOfPublishing": 1951,
+    "authorImage": "https://i.ibb.co/HGTxjfn/OYPGh90-Fj-Jt0-XME4g2d-W5jx-EQz-Bdv-Nv7-YPGsrt8tqds-removebg-preview.png",
+    "about": "J.D. Salinger is a chef known for her culinary skills. She enjoys cooking, traveling, and discovering new recipes from around the world."
   },
   {
     "bookId": 7,
@@ -88,7 +100,9 @@
     "category": "Fantasy",
     "tags": ["Adventure", "Quest"],
     "publisher": "George Allen & Unwin",
-    "yearOfPublishing": 1937
+    "yearOfPublishing": 1937,
+    "authorImage": "https://i.ibb.co/fd3R6Wq/Paulo-Coelho-2007-04-09-001-cropped-removebg-preview.png",
+    "about": "J.R.R. Tolkien is a software developer based in Miami. He loves coding, playing video games, and exploring the city's nightlife."
   },
   {
     "bookId": 8,
@@ -101,7 +115,9 @@
     "category": "Young Adult",
     "tags": ["Dystopian", "Action"],
     "publisher": "Scholastic Press",
-    "yearOfPublishing": 2008
+    "yearOfPublishing": 2008,
+    "authorImage": "https://i.ibb.co/k3PKDgv/haruki-murakami-author-photo-elena-seibert-custom-587c056cd651b2521ccbe0e1efd2a6f563e0b7eb-removebg.png",
+    "about": "Suzanne Collins is a veterinarian passionate about animal care. She enjoys hiking, gardening, and spending time with her pets."
   },
   {
     "bookId": 9,
@@ -114,6 +130,8 @@
     "category": "Fantasy",
     "tags": ["Adventure", "Epic"],
     "publisher": "George Allen & Unwin",
-    "yearOfPublishing": 1954
+    "yearOfPublishing": 1954,
+    "authorImage": "https://i.ibb.co/Kw6smhW/gettyimages-187751114-removebg-preview.png",
+    "about": "J.R.R. Tolkien is a journalist based in Washington D.C. He loves writing, photography, and uncovering stories that matter."
   }
 ]

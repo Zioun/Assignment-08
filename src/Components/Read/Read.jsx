@@ -32,7 +32,7 @@ const Read = () => {
   };
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center h-screen items-center'>
       <BarChart
         width={1100}
         height={600}

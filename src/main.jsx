@@ -8,6 +8,8 @@ import Details from './Components/Details/Details';
 import Listed from './Components/Listed/Listed';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Read from './Components/Read/Read';
+import Author from './Components/Author/Authors';
+import TopReatedBook from './Components/TopReatedBook/TopReatedBook';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,17 @@ const router = createBrowserRouter([
         element: <Read />,
         loader: () => fetch('../books.json'),
       },
+      {
+        path: '/author',
+        element:  <Author />,
+        loader: () => fetch('../books.json'),
+      },
+      {
+        path: '/top-rated-book',
+        element:  <TopReatedBook />,
+        loader: () => fetch('../books.json'),
+      },
+
     ],
   },
 ]);

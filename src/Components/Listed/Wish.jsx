@@ -1,19 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-const Wish = ({wish}) => {
-    const {
-        bookId,
-        bookName,
-        author,
-        image,
-        review,
-        totalPages,
-        rating,
-        category,
-        tags,
-        publisher,
-        yearOfPublishing,
-      } = wish;
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaUserFriends } from "react-icons/fa";
+import { FaFileAlt } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
+const Wish = ({ wish }) => {
+  const {
+    bookId,
+    bookName,
+    author,
+    image,
+    review,
+    totalPages,
+    rating,
+    category,
+    tags,
+    publisher,
+    yearOfPublishing,
+  } = wish;
   return (
     <div className="flex flex-col md:flex-row gap-5 items-center border rounded-2xl py-5">
       <div className="w-[230px] bg-[#F3F3F3] flex justify-center py-10 px-10 ml-5 rounded-2xl">
@@ -28,19 +31,32 @@ const Wish = ({wish}) => {
         </div>
         <div className="flex flex-col md:flex-row gap-5">
           <div className="flex gap-5">
-            {
-                tags.map((tags)=><h2 className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
+            {tags.map((tags) => (
+              <h2 className="ws font-medium px-[16px] py-[7px] bg-[#F4FCF3] text-[#23BE0A] rounded-[30px]">
                 <span># {tags}</span>
-              </h2>)
-            }
+              </h2>
+            ))}
           </div>
-          <div>
-            <h1 className="mt-2">Year of Publishing: {yearOfPublishing}</h1>
+          <div className="flex items-center gap-2 text-[#717171]">
+            <span className="text-[20px]">
+              <IoLocationSharp />
+            </span>
+            <h1 className="">Year of Publishing: {yearOfPublishing}</h1>
           </div>
         </div>
         <div className="ws font-normal text-[16px] flex flex-col md:flex-row gap-5 text-[#717171] py-[16px]">
-          <h2>Publisher: {publisher}</h2>
-          <h2>Page {totalPages}</h2>
+          <div className="flex items-center gap-3">
+            <span className="text-[20px]">
+              <FaUserFriends />
+            </span>
+            <h2> Publisher: {publisher}</h2>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-[20px]">
+              <FaFileAlt />
+            </span>
+            <h2>Page {totalPages}</h2>
+          </div>
         </div>
         <hr className="max-w-[1000px]" />
         <div className="flex flex-col md:flex-row  gap-5 mt-5">
@@ -51,7 +67,9 @@ const Wish = ({wish}) => {
             Rating: {rating}
           </button>
           <Link to={`/details/${bookId}`}>
-              <button className="btn w-full btn-md bg-[#23BE0A] text-white ws rounded-full hover:bg-[#23BE0A]">View Details</button>
+            <button className="btn w-full btn-md bg-[#23BE0A] text-white ws rounded-full hover:bg-[#23BE0A]">
+              View Details
+            </button>
           </Link>
         </div>
       </div>
