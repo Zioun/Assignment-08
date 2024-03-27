@@ -8,11 +8,11 @@ const NavBar = () => {
     <>
       <li><NavLink to="/">Home</NavLink> </li>
       <li><NavLink to="/listed">Listed Books</NavLink></li>
-      <li><a>Pages to Read</a></li>
+      <li><NavLink to="/read">Pages to Read</NavLink></li>
     </>
   )
   return (
-    <div className="navbar bg-base-100 py-[52px]">
+    <div className="navbar bg-base-100 md:py-[52px]">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <h1 className="ws font-bold text-[28px]">Book Vibe</h1>
+        <h1 className="ws font-bold text-[20px] md:text-[28px]">Book Vibe</h1>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -46,8 +46,8 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end flex gap-4">
-        <button className="btn bg-[#23BE0A] text-white ws hover:bg-[#23BE0A]">Sign In</button>
-        <button className="btn bg-[#59C6D2] text-white ws hover:bg-[#59C6D2]">Sign Up</button>
+        <button className="btn btn-sm md:btn bg-[#23BE0A] text-white ws hover:bg-[#23BE0A] md:bg-[#23BE0A] md:text-white ws md:hover:bg-[#23BE0A]">Sign In</button>
+        <button className="btn bg-[#59C6D2] text-white hover:bg-[#59C6D2] btn-sm md:btn md:bg-[#59C6D2] md:text-white ws md:hover:bg-[#59C6D2]">Sign Up</button>
       </div>
     </div>
   );

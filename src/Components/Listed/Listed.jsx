@@ -18,7 +18,7 @@ const Listed = () => {
 
   return (
     <div>
-      <div className="hero bg-base-200 rounded-[28px]">
+      <div className="hero bg-base-200 md:rounded-[28px]">
         <div className="hero-content text-center">
           <div className="max-w-md">
             <h1 className="font-bold ws text-[28px] py-[20px]">Books</h1>
@@ -41,7 +41,7 @@ const Listed = () => {
           </option>
         </select>
       </div>
-      <div role="tablist" className="tabs tabs-lifted pb-20">
+      <div role="tablist" className="tabs tabs-lifted pb-10">
         <input
           type="radio"
           name="my_tabs_2"

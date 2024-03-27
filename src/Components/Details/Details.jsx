@@ -21,11 +21,11 @@ const Details = () => {
 
 
   return (
-    <div className="grid grid-cols-12 gap-[48px]">
-      <div className="col-span-6 bg-[#F3F3F3] rounded-[16px] p-[73px]">
-        <img className="max-w-[425px] h-[564px]" src={image} alt="" />
+    <div className="grid md:grid-cols-12 gap-[48px] mb-10">
+      <div className="col-span-6 bg-[#F3F3F3] md:rounded-[16px] md:p-[73px]">
+        <img className="max-w-[425px] md:h-[564px] m-auto py-[50px] md:py-[0px]" src={image} alt="" />
       </div>
-      <div className="col-span-6">
+      <div className="col-span-6 px-5 md:px-0">
         <div>
           <h1 className="pd font-bold text-[40px]">{bookName}</h1>
           <h2 className="ws font-medium text-[20px] text-[#424242] mb-[24px]">
